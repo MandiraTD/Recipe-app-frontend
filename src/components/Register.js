@@ -15,6 +15,8 @@ const Register = () => {
   });
   const [error, setError] = useState("");
   const [passwordFocus, setPasswordFocus] = useState(false);
+
+  //set validations to password
   const [passwordValidations, setPasswordValidations] = useState({
     hasLowercase: false,
     hasUppercase: false,
@@ -25,6 +27,7 @@ const Register = () => {
 
   const navigate = useNavigate();
 
+  //Sending user data to the database
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -41,12 +44,13 @@ const Register = () => {
     setError("");
   };
 
+  //Setting error messages for email and password validations
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     const { email, password, confirmPw } = formData;
 
-    // Validate email and password
+    
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError("Invalid email format.");
       return;
