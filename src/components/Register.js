@@ -126,6 +126,7 @@ const Register = () => {
               onBlur={() => setPasswordFocus(false)}
               required
             />
+                //Display error messages for incorrect format password
             {passwordFocus && (
               <div className="password-hints">
                 <p className={passwordValidations.hasLowercase ? "valid" : "invalid"}>
