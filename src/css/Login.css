@@ -1,0 +1,178 @@
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.login{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1eded;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-grid div {
+    display: flex;
+    flex-direction: column;
+}
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+   
+}
+
+.login-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.login-box input[type="email"],
+.login-box input[type="password"],
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+   
+}
+.login-box label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px; 
+    text-align: left;
+}
+
+.login-box button {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.login-box button:hover {
+    background-color: #ff4d61;
+}
+
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.login-box p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.login-box a {
+    color: #ff6b81;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+
+.register-box {
+    
+    margin-top: 20px;
+    width: 600px; 
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+
+.register-box input {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; 
+   
+
+   
+}
+.display{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+
+.register-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.register-button {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.register-button:hover {
+    background-color: #ff4d61;
+}
+
+.password-hints {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .password-hints p {
+    margin: 3px 0;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
